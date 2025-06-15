@@ -1,22 +1,20 @@
 # Bitcoin Volatility Analysis
 
-## 项目展示
-
- [volatility_surface.html](src\visualization\volatility_surface.html) 
+[![Live Demo](https://img.shields.io/badge/Interactive 3D Demo - Click to Experience-00b4ff?style=for-the-badge&logo=webgl)](https://leien2.github.io/bitcoin-volatility-surface/)
 
 
 
-## 项目简介
+## Project Introduction
 
-这个项目的核心目标是建立一个针对比特币期权市场的波动率自动化分析工具，为期权交易策略的制定提供数据支持。它主要解决两个问题：一是高效、准确地从海量异构数据中计算出隐含波动率（数据处理效率）；二是如何解读和利用生成的曲面来辅助交易决策和风险管理（交易应用价值）	
+The core objective of this project is to establish an automated volatility analysis tool for the Bitcoin options market, providing data support for formulating options trading strategies. It primarily addresses two challenges: first, efficiently and accurately calculating implied volatility from massive heterogeneous data (data processing efficiency); second, interpreting and utilizing the generated volatility surface to aid trading decisions and risk management (trading application value).
 
 
 
-## 文件结构
+## File Structure
 
-- **实时市场数据获取**：通过Deribit API自动获取最新的BTC期权市场数据
-- **数据清洗与结构化**：将原始JSON数据转换为结构化CSV格式，便于分析处理
-- **期权参数提取**：自动从期权名称中解析关键参数(到期日、行权价等)
-- **隐含波动率计算**：使用期权市场定价提取隐含波动率信息
-- **波动率曲面构建**：利用三维可视化技术，直观展示不同行权价和到期日的波动率结构
-- **波动率异常识别**：帮助快速发现波动率偏斜(skew)和微笑(smile)等市场特征
+- **Real-time Market Data Acquisition**: Automatically retrieve the latest BTC options market data via the Deribit API
+- **Data Cleaning and Structuring**: Convert raw JSON data into structured CSV format for analytical processing
+- **Option Parameter Extraction**: Automatically parse key parameters (expiration date, strike price, etc.) from option names
+- **Implied Volatility Calculation**: Extract implied volatility information using market prices of options
+- **Volatility Surface Construction**: Utilize 3D visualization to intuitively display volatility structures across strike prices and expirations
+- **Volatility Anomaly Identification**: Rapidly detect market characteristics such as volatility skew and smile
