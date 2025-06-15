@@ -10,6 +10,14 @@ The core objective of this project is to establish an automated volatility analy
 
 
 
+1. Get the data from deribit exchange through data_fetcher.py
+
+2. After data cleaning, calculate IV, DTE, and strike price through analyze_options.py
+
+3. plot_vol_surface.py draws the volatility surface
+
+
+
 ## File Structure
 
 - **Real-time Market Data Acquisition**: Automatically retrieve the latest BTC options market data via the Deribit API
